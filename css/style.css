@@ -26,9 +26,6 @@
 .vh50 {
   height: 50vh;
 }
-.vh40 {
-  height: 40vh;
-}
 header {
   height: 100vh;
   background: url("../img/headerBg.jpg") 55% 50% / cover no-repeat;
@@ -84,42 +81,190 @@ article p {
 article a {
   display: inline-block;
   margin-top: 15px;
+  font: 0.8em "Proxima";
 }
-#fitnes {
+.fitnes {
   text-align: center;
-  padding: 80px 0 0 0;
+  padding: 40px 0 0 0;
 }
-#fitnes h6 {
+.fitnes h6 {
   font: 400 0.8em "Montserrat";
   text-transform: uppercase;
 }
-#fitnes h2 {
+.fitnes h2 {
   font: 300 35px "Open Sans";
   text-transform: uppercase;
   padding: 10px 0 20px 0;
 }
-#fitnes p {
+.fitnes p {
   font: 400 0.8em "Open Sans";
   line-height: 26px;
   color: #656e74;
   padding: 20px 5px 10px 5px;
 }
-#fitnes a {
+.fitnes a {
   text-decoration: underline;
   font: 400 0.9em "Open Sans";
 }
-.f-first{
-  background: url("../img/FitnessFirst.jpg");
+.f-first {
+  background: url("../img/FitnessFirst.jpg") center center/cover;
 }
-.f-second{
-  background: url("../img/yourBody.jpg");
+.f-second {
+  background: url("../img/yourBody.jpg") center center/cover;
 }
-#lifestyle{
-  background: url("../img/lifestyle.jpg");
+#lifestyle {
+  background: url("../img/lifestyle.jpg") center center/cover;
 }
-#lifestyle_2{
-  background: url("../img/summer.jpg");
+#lifestyle_2 {
+  background: url("../img/summer.jpg") center center/cover;
 }
+#grapes {
+  background: url("../img/grape.jpg") center center/cover;
+}
+#mango {
+  background: url("../img/mango.jpg") center center/cover;
+}
+.track {
+  padding: 50px 60px 0 40px;
+}
+.track h6,
+.involved h6 {
+  font: 400 0.8em "Montserrat";
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.track h2,
+.involved h2 {
+  font: 300 35px "Open Sans";
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.track p,
+.involved p {
+  font: 400 0.8em "Open Sans";
+  line-height: 26px;
+}
+.of_fun {
+  padding: 0 0 0 60px;
+}
+.of_fun h3 {
+  font: 300 35px "Open Sans";
+  text-transform: uppercase;
+  padding: 60px 0 10px 0;
+}
+.of_fun p {
+  font: 400 0.8em "Open Sans";
+  line-height: 26px;
+  padding: 20px 50px 0 0;
+}
+.habits {
+  padding: 50px 0 0 40px;
+}
+.habits b {
+  font: 500 1em "Montserrat";
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.habits h3,
+.habits p {
+  color: #fff;
+}
+.habits h3 {
+  font: 300 2.1em "Open Sans";
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.habits p {
+  font: 400 0.8em "Open Sans";
+  padding-right: 50px;
+}
+.involved {
+  padding: 50px 15px 0 40px;
+}
+.footer_head {
+  height: 90vh;
+  background: url("../img/footerBg.jpg");
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer_head h3 {
+  font: 400 2.8em "Open Sans";
+  padding: 0 0 0 35px;
+}
+.footer_head p {
+  font: 400 1em "Open Sans";
+  line-height: 23px;
+}
+.footer_main {
+  background: #000;
+  padding: 60px 0 0 0;
+  min-height: 90vh;
+}
+.footer_main h3 {
+  font: 400 0.9em "Open Sans";
+  color: #fff;
+  padding-bottom: 30px;
+}
+.footer_main p {
+  font: 400 0.8em "Open Sans";
+  line-height: 24px;
+  color: #8297a7;
+}
+.footer_main input {
+  font: 400 0.8em "Proxima";
+  color: #83969f;
+  padding: 20px 0 20px 22px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.name {
+  width: 180px;
+}
+.email {
+  width: 300px;
+}
+.submit {
+  width: 150px;
+  text-align: center;
+  /* font: optional; */
+  padding: 20px 0 !important;
+}
+.icons {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.icon {
+  color: wheat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon1 {
+  background: #2e3092;
+}
+.icon2 {
+  background: #00adef;
+}
+.icon3 {
+  background: #ed3123;
+}
+.icon4 {
+  background: #16198f;
+}
+.pad {
+  padding: 0 25px 50px 0;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     text-align: initial;
@@ -147,10 +292,10 @@ article a {
   .col25 {
     width: 25%;
   }
-  .col33{
+  .col33 {
     width: 33%;
   }
-  .col66{
+  .col66 {
     width: 67%;
   }
   .row::after {
@@ -163,5 +308,11 @@ article a {
   }
   .floatr {
     float: right;
+  }
+  .footer_head h3 {
+    font-size: 2em;
+  }
+  .df {
+    display: flex;
   }
 }
